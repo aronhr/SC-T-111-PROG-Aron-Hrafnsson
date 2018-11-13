@@ -1,14 +1,10 @@
-value = int(input("Initial value: "))
-step = int(input("Step: "))
-samtals = value
-summa = 0
-steps = step
-print(samtals, end=" ")
+x = int(input("Initial value: "))
+y = int(input("Step: "))
+sum = 0
 
-while samtals <= 100:
-        summa = value + steps
-        print(summa, end=" ")
-        steps += step
-        samtals = samtals + summa
+while sum <= 100:
+    sum += x
+    print(x, end=" ")
+    x += y
 
-print("\nSum of series: " + str(samtals))
+print("\nSum of series: " + str(sum))
