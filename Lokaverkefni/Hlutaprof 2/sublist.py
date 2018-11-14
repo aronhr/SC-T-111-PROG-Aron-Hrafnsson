@@ -1,12 +1,9 @@
-def make_sublists(listi):
-    subs = [[]]
-    for i in range(len(listi)):
-        n = i + 1
-        while n <= len(listi):
-            sub = listi[i:n]
-            subs.append(sub)
-            n += 1
-    return subs
+def make_sublists(a_list):
+    result = [[]]
+    for i in range(len(a_list)):
+        for j in range(i, len(a_list)):
+            result.append(a_list[i:j+1])
+    return result
 
 
 # Main program starts here
