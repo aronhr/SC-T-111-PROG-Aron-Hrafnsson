@@ -13,6 +13,11 @@ def is_prime(n):
 
 def print_list(listi):
     return [int(ss) for ss in listi]
+    listinn = []
+    for x in listi:
+        listinn.append(int(x))
+
+    return listinn
 
 
 def prime(listi):
