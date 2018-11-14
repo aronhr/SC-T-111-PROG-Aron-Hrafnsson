@@ -5,7 +5,7 @@ for i in range(size):
     arr.append(int(input("Enter value {}:".format(i + 1))))
 
 if size > 0:
-    highest = arr[0]
+    highest = float("-inf")
 
     for x in range(1, len(arr)):
         if arr[x] > highest:
