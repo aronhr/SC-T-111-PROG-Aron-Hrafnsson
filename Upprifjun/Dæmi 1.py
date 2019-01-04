@@ -1,3 +1,61 @@
+"""
+Í þessu verkefni eigið þið að útfæra klasann FootballPlayer og tvö föll utan klasans þannig að hin gefna beinagrind keyri rétt.  Klasinn á sér tvær tilvikabreytur (attributes): number (númer leikmanns) og points (skoruð stig).
+
+
+
+Í klasanum eru fjögur föll (methods).  Hér er aðeins lýsing fyrir eitt þeirra:
+
+shoot_ball(): Þetta fall velur af handahófi hvort leikmaðurinn hitti eða hitti ekki í markið í skottilraun (1/30 líkur).  Notið random.randint() til að ákvarða hvort leikmaður hitti eða hitti ekki.  Ef leikmaður hittir þá bætir hann við sig einu stigi, annars 0.  Fallið skilar viðbættum stigum.
+
+
+Athugið:
+
+Klasinn Team er gefinn - þið þurfið EKKI að útfæra neina aukavirkni í honum.
+randint(a,b): Býr til heiltölu N af handahófi á bilinu a <= N <= b.
+
+
+Hvernig útkoman á að vera:
+
+KR won!
+
+Fjölnir scored 0 points!
+KR scored 1 points!
+
+Fjölnir scoring:
+Number: 1 Points: 0
+Number: 2 Points: 0
+Number: 3 Points: 0
+Number: 4 Points: 0
+Number: 5 Points: 0
+Number: 6 Points: 0
+Number: 7 Points: 0
+Number: 8 Points: 0
+Number: 9 Points: 0
+Number: 10 Points: 0
+Number: 11 Points: 0
+
+KR scoring:
+Number: 1 Points: 0
+Number: 2 Points: 0
+Number: 3 Points: 0
+Number: 4 Points: 1
+Number: 5 Points: 0
+Number: 6 Points: 0
+Number: 7 Points: 0
+Number: 8 Points: 0
+Number: 9 Points: 0
+Number: 10 Points: 0
+Number: 11 Points: 0
+
+Fjölnir highest scoring player:
+Number: 1 Points: 0
+
+KR highest scoring player:
+Number: 4 Points: 1
+
+"""
+
+
 import random
 
 TEAM_SIZE = 11
