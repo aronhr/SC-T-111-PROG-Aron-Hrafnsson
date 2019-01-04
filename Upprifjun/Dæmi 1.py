@@ -22,34 +22,12 @@ Fjölnir scored 0 points!
 KR scored 1 points!
 
 Fjölnir scoring:
-Number: 1 Points: 0
-Number: 2 Points: 0
-Number: 3 Points: 0
-Number: 4 Points: 0
-Number: 5 Points: 0
-Number: 6 Points: 0
-Number: 7 Points: 0
-Number: 8 Points: 0
-Number: 9 Points: 0
-Number: 10 Points: 0
-Number: 11 Points: 0
-
+None
 KR scoring:
-Number: 1 Points: 0
-Number: 2 Points: 0
-Number: 3 Points: 0
 Number: 4 Points: 1
-Number: 5 Points: 0
-Number: 6 Points: 0
-Number: 7 Points: 0
-Number: 8 Points: 0
-Number: 9 Points: 0
-Number: 10 Points: 0
-Number: 11 Points: 0
 
 Fjölnir highest scoring player:
-Number: 1 Points: 0
-
+None
 KR highest scoring player:
 Number: 4 Points: 1
 
@@ -76,6 +54,8 @@ class Team:
         self.__points += self.__team[random_index].shoot_ball()
 
     def get_player_with_highest_score(self):
+        if self.__points == 0:
+            return "None"
         highest_player = self.__team[0]
         for player in self.__team:
             if player > highest_player:
@@ -90,8 +70,11 @@ class Team:
 
     def __str__(self):
         the_str = ''
+        if self.__points == 0:
+            return "None"
         for player in self.__team:
-            the_str += str(player)
+            if player.points != 0:
+                the_str += str(player)
         return the_str
 
 

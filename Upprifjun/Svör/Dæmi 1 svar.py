@@ -18,6 +18,8 @@ class Team:
         self.__points += self.__team[random_index].shoot_ball()
 
     def get_player_with_highest_score(self):
+        if self.__points == 0:
+            return "None"
         highest_player = self.__team[0]
         for player in self.__team:
             if player > highest_player:
@@ -32,8 +34,11 @@ class Team:
 
     def __str__(self):
         the_str = ''
+        if self.__points == 0:
+            return "None"
         for player in self.__team:
-            the_str += str(player)
+            if player.points != 0:
+                the_str += str(player)
         return the_str
 
 
